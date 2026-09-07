@@ -1,0 +1,43 @@
+IRONHYBRID V4 — COMO ATUALIZAR O SITE QUE JÁ ESTÁ NO GITHUB
+
+Você NÃO precisa criar outro repositório, outro Firebase nem outra conta.
+
+1. Descompacte IronHybrid_Firebase_GitHub_V4.zip.
+2. Abra o MESMO repositório My-Diet no GitHub.
+3. Use Add file > Upload files.
+4. Envie os arquivos da V4 para a raiz do repositório.
+5. Quando o GitHub avisar que os arquivos já existem, confirme a substituição/novo commit.
+6. Faça Commit changes.
+7. Aguarde Actions / Pages terminar o deploy.
+8. Abra o MESMO link do GitHub Pages.
+
+IMPORTANTE SOBRE CACHE
+- A V4 usa um service worker novo (cache v4) e prioriza a versão da rede.
+- Não é necessário apagar todos os dados do navegador.
+- Depois do deploy, atualize a página uma vez.
+- Se ainda vir “V3”, feche todas as abas do app e abra novamente.
+- Na aba Conta deve aparecer “Firebase • V4”.
+
+TESTE 1 — ESTIMATIVAS
+1. Avaliação > Básica.
+2. Preencha peso, altura, nascimento, sexo e atividade.
+3. Mifflin e TDEE já devem aparecer enquanto você preenche.
+4. Salve.
+5. Os números devem continuar visíveis.
+6. Na básica, Katch/Cunningham mostram que precisam de BF% ou massa livre de gordura.
+7. Na Bioimpedância/Completa, preencha BF% ou massa livre de gordura para liberar Katch/Cunningham.
+
+TESTE 2 — JEJUM / CORRIDA À NOITE
+1. Abra Dieta.
+2. Escolha um dia.
+3. Em Rotina do dia escolha:
+   - Com café da manhã (~09:00), ou
+   - Jejum até o almoço.
+4. Marque se haverá corrida à noite.
+5. A estrutura das refeições muda automaticamente.
+6. Essa preferência fica salva por dia e sincroniza no Firebase.
+
+LONGÃO
+- Se o longão for sábado, a preparação aparece sexta.
+- Se o longão for domingo, aparece sábado.
+- Em longão matinal, mesmo que “jejum” esteja selecionado, o app mantém o pré-longão quando a sessão exige combustível.
