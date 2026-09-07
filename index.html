@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="IronHybrid Cut">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <title>IronHybrid • Cutting & Performance</title>
+</head>
+<body>
+  <div id="toast" class="toast hidden"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">IH</div>
+      <div>
+        <div class="brand-title">IronHybrid</div>
+        <div class="brand-sub">Cutting & Performance</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="syncStatus" class="status-pill offline">Local</span>
+      <button id="installBtn" class="btn small primary hidden">Instalar</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="view-dashboard" class="view active"></section>
+    <section id="view-diet" class="view"></section>
+    <section id="view-assessment" class="view"></section>
+    <section id="view-evolution" class="view"></section>
+    <section id="view-account" class="view"></section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button data-view="dashboard" class="nav-btn active">Hoje</button>
+    <button data-view="diet" class="nav-btn">Dieta</button>
+    <button data-view="assessment" class="nav-btn">Avaliação</button>
+    <button data-view="evolution" class="nav-btn">Evolução</button>
+    <button data-view="account" class="nav-btn">Conta</button>
+  </nav>
+
+  <div id="modal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modalTitle">Detalhes</h3>
+        <button class="icon-btn" id="modalClose">✕</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
